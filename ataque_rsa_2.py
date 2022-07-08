@@ -6,7 +6,7 @@ from resources.inverso import INVERSO
 from resources.rsa import CIPHER
 
 def __message_module_attack():
-    print("Posible ataque de modulo comun")
+    print("Posible ataque de modulo")
 
 def attack2():
     e = 7
