@@ -119,3 +119,35 @@ sign: 417705249
 u: 475123918
 u = m: True  
 ```
+
+## Punto adicional para el examen final:
+Utilizar el algoritmo RSA (b = 32) para generar y validar una ﬁrma digital. Utilizar el estandar PKCS #1 v1.5 para a˜nadir un padding al mensaje original. Fecha lımite de entrega: 08/07/22.
+
+```py
+import hashlib, sys
+
+def gen_EB(M, bits):
+  H = hashlib.sha1(bytes(M, encoding="utf-8")).hexdigest()
+  PS = "F" * (bits - sys.getsizeof(H) - 3)
+  T = hex(RANDOMGEN_PRIMOS(bits, 100))[2:] + H
+  return "0001" + PS + "00" + T
+
+def StringToInt(EB):
+  return int(EB, base=16)
+
+def IntToString(c):
+  return hex(c)[2:]
+
+bits = 32
+rsa = RSA(bits)
+
+EB = gen_EB("Hola mundo", bits)
+m = StringToInt(EB)
+c = rsa.Descifrado(m)  # m^d mod n
+OB = IntToString(c)
+
+print("\"m\" original: ", m % rsa.n)
+print("Firma digital:", OB)
+print("\"m\" recuperada: ", rsa.Cifrado(c))
+
+```
