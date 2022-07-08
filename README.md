@@ -93,7 +93,7 @@ def attack3():
     u = CIPHER(sign, P)
 ```
 
-## Resultado
+### Resultado
 
 ```bash
 -------- ATAQUE 1 --------
@@ -150,4 +150,10 @@ print("\"m\" original: ", m % rsa.n)
 print("Firma digital:", OB)
 print("\"m\" recuperada: ", rsa.Cifrado(c))
 
+```
+### Resultado
+```bash
+"m" original:  1481651286
+Firma digital: 76cda0f1
+"m" recuperada:  1481651286
 ```
