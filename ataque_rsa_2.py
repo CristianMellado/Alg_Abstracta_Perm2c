@@ -1,4 +1,4 @@
-from resources.euclides import EUCLIDES
+from resources.EUCLIDES import EUCLIDES
 from resources.euclides_extendido import EUCLIDES_EXTENDIDO
 from resources.exp_mod import EXP_MOD
 from resources.exp_modbits import EXP_MODBITS
