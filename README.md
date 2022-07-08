@@ -4,7 +4,7 @@
 
 
 Correr el main.py
-*Use el modulo hashlib y sys de python, ademas de los codigos anteriores (como el de euclides, miller rabin, generar primos, cipher, etc)
+Use el modulo hashlib y sys de python, ademas de los codigos anteriores (como el de euclides, miller rabin, generar primos, cipher, etc)
 
 
 ## Ataque 1
@@ -47,7 +47,7 @@ def attack1():
 Sin embargo al enviar el mismo mensaje (m) cuando e = 11, el cifrado resulto ser
     c = 357942341797258687749918078325684554030037780242282261935329081 90484670252364665786748759822531352444533388184.
 
-Como ya se tiene un mensaje cifrado dos veces con diferentes exponentes pero mismo módulo, se puede hacer un ataque de modulo comun. Se hallan los valores de x, y mediante el algoritmo Extendido de Euclides.
+Como ya se tiene un mensaje cifrado dos veces con diferentes exponentes pero mismo módulo, se puede hacer un ataque de modulo comun.
 
 ```py
 def attack2():
