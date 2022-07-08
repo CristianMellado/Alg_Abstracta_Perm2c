@@ -22,7 +22,7 @@ rsa = RSA(bits)
 
 EB = gen_EB("Hola mundo", bits)
 m = StringToInt(EB)
-c = rsa.Descifrado(m)  # m^d mod n
+c = rsa.Descifrado(m)
 OB = IntToString(c)
 
 print("\"m\" inicial para descifrar: ", m % rsa.n) 
