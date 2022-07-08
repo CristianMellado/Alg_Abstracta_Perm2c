@@ -158,7 +158,7 @@ print("\"m\" recuperada: ", rsa.Cifrado(c))
 ```
 ### Resultado
 ```bash
-"m" original:  1481651286
+"m" inicial para cifrar:  1481651286
 Firma digital: 76cda0f1
-"m" recuperada:  1481651286
+"m" final descifrado:  1481651286
 ```
