@@ -12,9 +12,9 @@ python main.py
 
 ## Ataques al Algoritmo RSA
 
-# Ataque 1
+## Ataque 1
 
-Para hallar el mensaje m primero hay que encontrar cuales son los números primos p y q que multiplicados dan n. En este caso específico, es posible dado que el número no es muy grande. Entonces podemos hallar phi(n) con estos dos números p, q.  Al hallar phi(n) podemos hallar la llave secreta y descifrar c.
+Primero hay que encontrar p y q que multiplicados dan n. Podemos hallar phi(n) con estos dos números p, q.  Al hallar phi(n) se puede hallar la llave secreta y descifrar c.
 
 ```py
 def __generate_primes(n):
@@ -41,9 +41,9 @@ def attack1():
     m = CIPHER(c, S)
     cx = CIPHER(m, P)
 ```
-# Ataque 2
+## Ataque 2
 
-Como ya tenemos un mensaje cifrado dos veces con diferentes exponentes pero mismo módulo, se puede hacer un ataque de modulo comun. Se hallan los valores de x , y mediante el algoritmo Extendido de Euclides. Como e_1 * x + e_2 * y = 1 --> c1^x * c2^y mod n = m --> (x es menor que 0) --> c1_inversa^x * c2^y mod n
+Como ya tenemos un mensaje cifrado dos veces con diferentes exponentes pero mismo módulo, se puede hacer un ataque de modulo comun. Se hallan los valores de x , y mediante el algoritmo Extendido de Euclides.
 
 ```py
 def attack2():
@@ -67,9 +67,9 @@ def attack2():
         m = (a * b) % n
         cx = CIPHER(m, P)
 ```
-# Ataque 3
+## Ataque 3
 
-Se comprueba que P(S(m)) = HASH(M), siendo M un mensaje, la función HASH sha1, la función P RSA con la clave pública y la funcion S RSA con la clave secreta. Se generan dos claves RSA (P y S) y se asigna m = HASH(M) % P[1] (n), luego se usa RSA para cifrar m (y luego descifrarlo). Este procedimiento es común en firmas digitales para revisar la autenticidad de un archivo.
+Se generan dos claves RSA (P y S) y se asigna m = HASH(M) % P[1] (n), luego se usa RSA para cifrar m (y luego descifrarlo).
 
 ```py
 def attack3():
