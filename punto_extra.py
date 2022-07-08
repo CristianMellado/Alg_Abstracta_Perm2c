@@ -25,6 +25,6 @@ m = StringToInt(EB)
 c = rsa.Descifrado(m)  # m^d mod n
 OB = IntToString(c)
 
-print("\"m\" original: ", m % rsa.n)    # "m" original aplicando modulo para normalizar tanto la original como la "m" recuperada
+print("\"m\" inicial para descifrar: ", m % rsa.n) 
 print("Firma digital:", OB)
-print("\"m\" recuperada: ", rsa.Cifrado(c))
+print("\"m\" final descifrado: ", rsa.Cifrado(c))
