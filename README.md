@@ -2,9 +2,8 @@
 
 - Cristian Mellado Baca
 
-### Ejecución
 
-Correr el main.py. en la terminal, ejecutara el ataque 1, 2 y 3
+Correr el main.py ejecutara el ataque 1, 2 y 3
 
 
 ## Ataques al Algoritmo RSA
