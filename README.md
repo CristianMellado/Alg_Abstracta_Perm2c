@@ -142,18 +142,17 @@ def StringToInt(EB):
 def IntToString(c):
   return hex(c)[2:]
 
-
 bits = 32
 rsa = RSA(bits)
 
 EB = gen_EB("Hola mundo", bits)
 m = StringToInt(EB)
-c = rsa.Descifrado(m)  # m^d mod n
+c = rsa.Descifrado(m)
 OB = IntToString(c)
 
-print("\"m\" original: ", m % rsa.n)
+print("\"m\" inicial para cifrar: ", m % rsa.n)
 print("Firma digital:", OB)
-print("\"m\" recuperada: ", rsa.Cifrado(c))
+print("\"m\" final descifrado: ", rsa.Cifrado(c))
 
 ```
 ### Resultado
