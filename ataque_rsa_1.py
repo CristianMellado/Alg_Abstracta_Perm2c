@@ -1,7 +1,7 @@
-from utils.EUCLIDES import EUCLIDES
-from utils.MILLER_RABIN import MILLER_RABIN
-from utils.INVERSO import INVERSO
-from utils.RSA import CIPHER
+from resources.euclides import EUCLIDES
+from resources.miller_rabin import MILLER_RABIN
+from resources.inverso import INVERSO
+from resources.rsa import CIPHER
 
 def __generate_primes(n):
     primes = ()
