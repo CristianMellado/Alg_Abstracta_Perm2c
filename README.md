@@ -3,8 +3,8 @@
 - Cristian Mellado Baca
 
 
-Correr el main.py ejecutara el ataque 1, 2 y 3
-
+Correr el main.py
+*Use el modulo hashlib y sys de python, ademas de los codigos anteriores (como el de euclides, miller rabin, generar primos, cipher, etc)
 
 
 ## Ataque 1
