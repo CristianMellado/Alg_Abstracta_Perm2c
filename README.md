@@ -121,7 +121,7 @@ u = m: True
 ```
 
 ## Punto adicional para el examen final:
-Utilizar el algoritmo RSA (b = 32) para generar y validar una ﬁrma digital. Utilizar el estandar PKCS #1 v1.5 para a˜nadir un padding al mensaje original. Fecha lımite de entrega: 08/07/22.
+Utilizar el algoritmo RSA (b = 32) para generar y validar una ﬁrma digital. Utilizar el estandar PKCS #1 v1.5 para añadir un padding al mensaje original. Fecha lımite de entrega: 08/07/22.
 
 ```py
 from resources.rsa import RSA
