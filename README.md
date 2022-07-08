@@ -6,9 +6,6 @@
 
 Correr el main.py. en la terminal, ejecutara el ataque 1, 2 y 3
 
-```bash
-python main.py
-```
 
 ## Ataques al Algoritmo RSA
 
